@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="keyword" content="calculator">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="John Doe">
+<meta name="viewport" content="width=device-width, initial-scale=2.0">
+<meta name="keyword" contet="game attempt">
 <meta charset="UTF-8">
-<title>Calculator</title>
 <link rel="stylesheet" href="index.css">
+<title>learning with canvas</title>
 </head>
 <body>
+    <canvas id="gameCanvas" height="200px"></canvas>
+    <a id="tap" href="index1.html">Idea with this</a>
+    <br>
 
-<div class="calc">
-<input type="text" readonly>
-<div class="btns">
-<button data-append-number="1">1</button>
-<button data-append-number="2">2</button>
-<button data-append-number="3">3</button>
-<button data-operation="+">+</button>
-<button data-append-number="4">4</button>
-<button data-append-number="5">5</button>
-<button data-append-number="6">6</button>
-<button data-operation="-">-</button>
-<button data-append-number="7">7</button>
-<button data-append-number="8">8</button>
-<button data-append-number="9">9</button>
-<button data-operation="*">*</button>
-<button data-operation="/">/</button>
-<button data-operation="%">%</button>
-<button data-calculate="=">=</button>
-<button data-clear="C">C</button>
-</div>
-</div>
+    <h2>How to work with canvas from HTML:</h2>
+    <p>&lt;canvas id="gameCanvas" width="800" height="600"&gt;&lt;/canvas&gt; <b>= height would be 150px, and width would be 300px if you don't specify it in your canvas.</b></p><br>
+
+    <h3>Then switch to Javascript:</h3>
+    <p>const <abbr title="Create a variable for the canvas that you will get by id">canvas</abbr> = document.getElementById("gameCanvas");<br>
+const <abbr title="Create a variable for content you'll draw for canvas">ctx</abbr> = canvas.getContext("2d");<br>
+<br>
+<span style="color: green">// Draw a rectangle</span><br>
+ctx.fillStyle = "<abbr title="any color">blue</abbr>";<br>
+ctx.fillRect(<abbr title="x-axis">80</abbr>, <abbr title="y-axis">60</abbr>, <abbr title="length">150</abbr>, <abbr title="width">100</abbr>);<br>
+<br>
+<span style="color: green">// Draw a circle</span><br>
+ctx.<abbr title="arc() is a code to create arc or circle">arc</abbr>(<abbr title="x-axis">200</abbr>, <abbr title="y-axis">150</abbr>, <abbr title="size">50</abbr>, <abbr title="starting angle of your circle that begins from right">0</abbr>, <abbr title="Math.PI is a radian for half of a circle, meaning you will have to write this radian time two">Math.PI * 2</abbr>, <abbr title="which direction will your circle go, false is clockwise and right is counterclockwise">false</abbr>);<br>
+ctx.fillStyle = "red";<br>
+ctx.fill()<br>
+<br>
+<span style="color: green">// Draw a triangle</span><br>
+ctx.save();<br>
+ctx.<abbr title="this code is available for all shapes, it is to freely move your canva by y or x axis however you'd like to, even tho it is optimal it makes everything way easier, but it isn't required if you're good at maths">translate</abbr>(<abbr title="x-axis">-80</abbr>, <abbr title="y-axis">-30</abbr>)<br>
+ctx.<abbr title="this is to begin forming your triangle, always write this first">beginPath()</abbr>;<br>
+ctx.<abbr title="from first point to second">moveTo(150, 70)</abbr>;<br>
+ctx.<abbr title="from second point to third">lineTo(80, 140)</abbr>;<br>
+ctx.<abbr title="from third point to first">lineTo(220, 140)</abbr>;<br>
+ctx.<abbr title="and then close it with this code, note forming a triangle is extremely difficult">closePath()</abbr>;<br>
+ctx.fillStyle = 'green';<br>
+ctx.fill();<br>
+ctx.<abbr title="reason why is the triangle only one who received the first code of it save() and this last code of it restore() is because the canva is required to be nested inside those two because of this translate() code that is available to every shape, since it can also potentially drag other forms with it, so you need to write those two to only make it available for one shape">restore()</abbr>;<br>
+<span style="color: green"><br>// Add text</span><br>
+ctx.fillStyle = "black";<br>
+ctx.font = "20px Arial";<br>
+ctx.fillText(<abbr title="set the text that it'd display">"Hello, Canvas!"</abbr>, <abbr title="x-axis">120</abbr>, <abbr title="y-axis">50</abbr>);</p>
+
+
 
 
 
