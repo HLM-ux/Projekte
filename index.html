@@ -1,58 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, intial-scale=2.0">
+<meta name="keyword" content="calculator">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="John Doe">
 <meta charset="UTF-8">
+<title>Calculator</title>
 <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    
-<h2 id="fh">Press this button to see what happens:</h2>
-<button id="fb">Click</button> 
-    <div id="fd"></div> 
-<h3><br>How it works:</h3> <br>
-<h3><abbr title="Choose your button">document.getElementById('fb')</abbr>.addEventListener('click', function() {<br>
-    const container1 = document.getElementById('fd'); <span style="color: green">// Choose your div</span><br>
-    const paragraph1 = document.createElement('p'); <span style="color: green">// Select which element would you like to generate when clicking button</span><br>
-    paragraph1.textContent = 'Clicked'; <span style="color: green">// Select what would you like it to say</span><br>
-    container1.appendChild(paragraph1);<br>
-    }); </h3> <br> <br> <br> <br>
-
-
-
-<h2 id="fh2">Press this button to see what happens:</h2> 
-<button id="fb2">Click</button>
- <div id="fd2"></div> 
- <h3><br>How it works:</h3> <br>
- <h3>document.getElementById('fb2').addEventListener('click', function() <abbr title="Everything in except the first usual line should be nested inside this if element">{</abbr><br>
-    if (!document.getElementById('newElement')) { <span style="color: green">// Add this <span style="color: purple">if</span> element, select <span style="color: red">this id</span></span><br>
-        const container = document.getElementById('fd2');<br>
-        const newElement = document.createElement('p');<br>
-        newElement.textContent = 'Clicked';<br>
-        newElement.id = 'newElement'; <span style="color: green">// <span style="color: red">this id</span> Should be be selected</span><br>
-        container.appendChild(newElement);<br>
-    }<br>
-});</h3> <br> <br><br><br>
-
-<h2 id="fh3">Press this button to see what happens:</h2> 
-<button id="fb3">Click</button>
- <div id="fd3"></div> 
- <h3><br>How it works:</h3> <br>
- <h3>document.getElementById('fb3').addEventListener('click', function() {<br> 
-    const Eelement = document.getElementById('gad')<br>
-    if (Eelement) {<br>
-        Eelement.remove()<br>
-    } else {<br>
-    const thetdiv = document.getElementById('td3')<br>
-    const generate = document.createElement('p')<br>
-    generate.id = 'gad'<br>
-    generate.textContent = 'now click again'<br>
-    thetdiv.appendChild(generate)<br>
-    }<br>
-})</h3>
-
+<div class="calc">
+<input type="text" readonly>
+<div class="btns">
+<button data-append-number="1">1</button>
+<button data-append-number="2">2</button>
+<button data-append-number="3">3</button>
+<button data-operation="+">+</button>
+<button data-append-number="4">4</button>
+<button data-append-number="5">5</button>
+<button data-append-number="6">6</button>
+<button data-operation="-">-</button>
+<button data-append-number="7">7</button>
+<button data-append-number="8">8</button>
+<button data-append-number="9">9</button>
+<button data-operation="*">*</button>
+<button data-operation="/">/</button>
+<button data-operation="%">%</button>
+<button data-calculate="=">=</button>
+<button data-clear="C">C</button>
+</div>
+</div>
 
 
 

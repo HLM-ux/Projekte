@@ -1,63 +1,42 @@
-/*  { }  */
+/*  {}  */
 
-* { 
-    margin: 0px;
-}
-
-#fb { 
-    margin-top: 2rem;
-    padding-left: 5rem;
-    font-size: 3rem;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-}
-#fb:hover { 
-    cursor: pointer;
-}
-#fb:active { 
-    cursor: copy;
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 5rem;
+    column-gap: 0.24rem;
+    row-gap: 0.5rem;
 }
 
-#fd { 
-    display: inline-block;
-    margin-left: 5rem;
+button {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    background-color: rgba(255, 0, 0, 0.68);
+}
+button:hover {
+    background-color: rgba(255, 0, 0, 0.452);
+}
+button:active {
+    background-color: rgba(255, 0, 0, 0.285);
 }
 
-#fb2 { 
-    margin-top: 2rem;
-    padding-left: 5rem;
-    font-size: 3rem;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-}
-#fb2:hover { 
-    cursor: pointer;
-}
-#fb2:active { 
-    cursor: copy;
-}
-#fd2, #fb2 { 
-    display: inline-block;
-}
-#fd2 { 
-    margin-left: 5rem;
+input {
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
-#fb3 { 
-    margin-top: 2rem;
-    padding-left: 5rem;
-    font-size: 3rem;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-}
-#fb3:hover { 
-    cursor: pointer;
-}
-#fb3:active { 
-    cursor: copy;
-}
-
-#fd3 { 
-    display: inline-block;
-    margin-left: 5rem;
-}
+.calc {
+    margin-top: 10rem;
+    margin-left: 35rem;
+    background-color: darkslategrey;
+    width: max-content;
+    padding-right: 1.1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-right: 2px black solid;
+    border-radius: 1rem;
+} 
