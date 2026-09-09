@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="keyword" content="js, practice">
+<meta name="author" content="John Doe">
+<meta name="viewport" content="width=deive-width, initial-scale=2.0">
+<link rel="stylesheet" href="index.css">
+<style>
+    /*  { }  */
+    h2 { 
+        display: inline;
+    }
+    #a2sth1 { 
+        margin-left: 10rem;
+    }
+    #a3rdh1 { 
+        margin-left: 10rem;
+    }
+
+    #b2 { 
+        margin-left: 14.1rem;
+    }
+    #b3 { 
+        margin-left: 14.3rem;
+    }
+
+    #d1, #d2, #d3 { 
+        display: inline-block;
+    }
+    #d2 { 
+        margin-left: 13rem;
+    }
+    #d3 { 
+        margin-left: 13rem;
+    }
+    /* work with #borderforthese and so on is in index.css */
+</style>
+</head>
+<body style="morehtml">
+
+
+
+
+<div id="Northdiv">
+
+    <a href="index.html" id="gb1">Go back</a>
+    
+    
+
+ 
+
+</div>
+
+<br><br>
+
+
+<div id="borderforthese">
+
+<h2>1st button:</h2> <h2 id="a2sth1">2st button:</h2> <h2 id="a3rdh1">3rd button:</h2><br>
+<button id="b1">Click</button> <button id="b2">Click</button> <button id="b3">Click</button> <br>
+<div id="d1"></div> <div id="d2"></div> <div id="d3"></div>
+
+</div>
+
+
+<div id="border"></div>
+
+
+<div id="tutorialforthese">
+
+   <h4>For button 1:</h4>
+        <p style="border-bottom: 1px grey solid; padding-bottom: 5px;">
+            <span style="color: blue;">document</span>.<span style="color: blue;">getElementById</span>('b1').<span style="color: blue;">addEventListener</span>(
+            <span style="color: green;">'click'</span>, function() { 
+            <br>
+            &nbsp;&nbsp;<span style="color: blue;">const</span> theDiv = <span style="color: blue;">document</span>.<span style="color: blue;">getElementById</span>('d1');
+            <br>
+            &nbsp;&nbsp;<span style="color: blue;">const</span> theElement = <span style="color: blue;">document</span>.<span style="color: blue;">createElement</span>(
+            <span style="color: green;">'p'</span>);
+            <br>
+            &nbsp;&nbsp;theElement.<span style="color: blue;">textContent</span> = <span style="color: green;">'Generated'</span>;
+            <br>
+            &nbsp;&nbsp;theDiv.<span style="color: blue;">appendChild</span>(theElement);
+            <br>
+            });
+        </p>
+        
+    <h4>For button 2:</h4>
+    <p style="border-bottom: 1px grey solid; padding-bottom: 5px; margin-bottom: 5px;">
+        <span style="color: blue;">document</span>.<span style="color: blue;">getElementById</span>('b2').<span style="color: blue;">addEventListener</span>(
+        <span style="color: green;">'click'</span>, function() { 
+        <br>
+        &nbsp;&nbsp;<span style="color: purple;">if</span> (<span style="color: blue;">!</span><span style="color: blue;">document</span>.<span style="color: blue;">getElementById</span>('placed')) { 
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">const</span> theDiv2 = <span style="color: blue;">document</span>.<span style="color: blue;">getElementById</span>('d2');
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">const</span> theElement2 = <span style="color: blue;">document</span>.<span style="color: blue;">createElement</span>(
+        <span style="color: green;">'p'</span>);
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;theElement2.<span style="color: blue;">id</span> = <span style="color: green;">'placed'</span>;
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;theElement2.<span style="color: blue;">textContent</span> = <span style="color: green;">'Generated'</span>;
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;theDiv2.<span style="color: blue;">appendChild</span>(theElement2);
+        <br>
+        &nbsp;&nbsp;} 
+        <br>
+        });
+    </p>
+
+<h4>For button 3:</h4>
+<p>
+    <span style="color: blue;">document</span>.<span style="color: blue;">getElementById</span>('b3').<span style="color: blue;">addEventListener</span>(
+    <span style="color: green;">'click'</span>, function() { 
+    <br>
+    &nbsp;&nbsp;<span style="color: blue;">const</span> theDiv3 = <span style="color: blue;">document</span>.<span style="color: blue;">getElementById</span>('d3');
+    <br>
+    &nbsp;&nbsp;<span style="color: blue;">const</span> theRemover = <span style="color: blue;">document</span>.<span style="color: blue;">getElementById</span>('clicktoremove');
+    <br>
+    &nbsp;&nbsp;<span style="color: purple;">if</span> (theRemover) { 
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;theRemover.<span style="color: blue;">remove</span>();
+    <br>
+    &nbsp;&nbsp;} <span style="color: purple;">else</span> { 
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: blue;">const</span> theElement3 = <span style="color: blue;">document</span>.<span style="color: blue;">createElement</span>(
+    <span style="color: green;">'p'</span>);
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;theElement3.<span style="color: blue;">textContent</span> = <span style="color: green;">'Generated'</span>;
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;theElement3.<span style="color: blue;">id</span> = <span style="color: green;">'clicktoremove'</span>;
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;theDiv3.<span style="color: blue;">appendChild</span>(theElement3);
+    <br>
+    &nbsp;&nbsp;}
+    <br>
+    });
+</p>
+
+
+
+
+</div>
+
+
+
+
+<script src="index.js"></script>
+</body>
+</html>

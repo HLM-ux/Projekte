@@ -1,61 +1,31 @@
-const canvas = document.getElementById("gameCanvas");
-const ctx = canvas.getContext("2d"); 
+/*  { }  */
 
-// Draw a rectangle
-ctx.fillStyle = "blue";
-ctx.fillRect(80, 60, 150, 100);
+document.getElementById('b1').addEventListener('click', function() { 
+    const theDiv = document.getElementById('d1')
+    const theElement = document.createElement('p')
+    theElement.textContent = 'Generated'
+    theDiv.appendChild(theElement)
+})
 
-// Draw a circle
-ctx.arc(200, 150, 50, 0, Math.PI * 2, false);
-ctx.fillStyle = "red";
-ctx.fill();
+document.getElementById('b2').addEventListener('click', function() { 
+    if (!document.getElementById('placed')) { 
+        const theDiv2 = document.getElementById('d2')
+        const theElement2 = document.createElement('p')
+        theElement2.id = 'placed'
+        theElement2.textContent = 'Generated'
+        theDiv2.appendChild(theElement2)
+    }
+})
 
-// Draw a triangle
-ctx.save();
-ctx.translate(-80, -30);
-ctx.beginPath();
-ctx.moveTo(150, 70);
-ctx.lineTo(80, 140);
-ctx.lineTo(220, 140);
-ctx.closePath(); 
-ctx.fillStyle = 'green'; 
-ctx.fill(); 
-ctx.restore();
-
-// Add text
-ctx.fillStyle = "black";
-ctx.font = "20px Arial";
-ctx.fillText("Hello, Canvas!", 120, 50);
-
-const heh = ctx
-console.log(heh)
-
-
-
-
-//  { }
-
-
-/* FAILED ATTEMPT
-const ourcanva = document.getElementById('fi1')
-const canv = ourcanva.getContext('2d')
-
-ourcanva.width = window.innerWidth
-ourcanva.height = window.innerHeight
-
-// my rectangle
-
-canv.fillStyle = 'black';
-canv.fillRect(10, 10, 150, 150);
-
-
-const thecanva = document.getElementById('fi')
-const thec = thecanva.getContext('2d')
-
-//my rectange
-
-thec.fillStyle = 'red'
-thec.fillRect(20, 20, 100, 100)*/
-
-
-
+document.getElementById('b3').addEventListener('click', function() { 
+    const theDiv3 = document.getElementById('d3')
+    const theRemover = document.getElementById('clicktoremove')
+    if (theRemover) { 
+        theRemover.remove()
+    } else { 
+    const theElement3 = document.createElement('p')
+    theElement3.textContent = 'Generated'
+    theElement3.id = 'clicktoremove'
+    theDiv3.appendChild(theElement3)
+  }
+})

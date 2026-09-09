@@ -1,72 +1,164 @@
 /*  { }  */
 
-* { 
+* {
     margin: 0;
 }
-#b2 { 
-    background-color: lime;
+
+#indexhtml { 
     overflow: hidden;
 }
 
-/* For index.html */
-#tap, #gameCanvas {
-    display: inline-block;
-}
-#tap {
-    position: relative;
-    bottom: 4rem;
-    left: 10rem;
-    font-size: 2rem;
-    text-decoration: none;
-    color: red;
-}
-
-
-/* For index1.html : FAILED ATTEMPT
-#options { 
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    background-color: rgb(179, 2, 2);
-    width: max-content;
-    height: 100vh;
-}
-#o { 
-    border: 2px rgb(1, 84, 1) solid;
-    width: 6rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+#Northc { 
+    border: 1px red solid;
+    height: 2rem;
     background-color: red;
-    text-decoration: none;
+}
+#pindiv1 { 
+    color: white;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    border-right: rgb(171, 170, 170) 1px solid;
+    padding-right: 1rem;
+}
+#searchbar { 
+    margin-left: 50rem;
+    padding-right: 3rem;
+    border: 1px tomato solid;
+    outline: tomato 2px solid;
+    background-color: rgb(220, 220, 220);
+}
+#searchsubmit { 
+    border: tomato 2px solid;
     color: whitesmoke;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: rgb(123, 123, 212);
 }
-
-#fi1 { 
-    width: 100vw;
-    height: 100vh;
-    z-index: 0;
+#searchsubmit:hover { 
+    cursor: pointer;
+    background-color: rgb(148, 148, 208);
 }
-#fi1, #b2 { 
-    display: inline-block;
-}*/
-
-
-#fi { 
-    width: 100%;
-    height: 10%;
+#searchsubmit:active { 
+    background-color: rgb(178, 178, 220);
 }
-#fil { 
-    height: 100%;
-    width: 10%;
+#searchbar, #searchsubmit { 
+    margin-top: 4px;
 }
-#fi, #as { 
+#search { 
     display: flex;
 }
-#as { 
-    margin-bottom: 20rem;
+
+#Eastc { 
+    border: 1px red solid;
+    height: 34.4rem;
+    width: 2rem;
+    background-color: red;
+    margin-left: auto;
+    margin-bottom: 10rem;
+}
+#Eastc, #sh, #nav { 
+    display: inline-block;
+}
+#nav { 
+    line-height: 3rem;
+    background-color: rgb(241, 39, 39);
+    height: 23rem;
+    width: 4rem;
+}
+.a1 { 
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: red;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: max-content;
+    border: 1px grey solid;
+}
+.a1:hover { 
+    background-color: rgb(252, 83, 83);
+}
+.a1:active { 
+    background-color: rgb(247, 100, 100);
 }
 
-#button, #dadiv { 
+#sh { 
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+#fitall { 
+    display: flex;
+}
+
+#allinfo, #Eastc, #nav { 
     display: inline-block;
-    column-gap: 2rem;
+}
+
+#allinfo { 
+    overflow-y: auto;
+    height: 28rem;
+    width: 50rem;
+    margin-top: 5rem;
+    position: relative;
+    right: 4rem;
+    line-height: 1.3rem;
+}
+
+/* for more.html */
+/*  { }  */
+
+
+#Northdiv { 
+    background-color: red;
+    border: 1px red solid;
+    height: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+#gb1 { 
+    margin-left: 1rem;
+    border: 1px grey solid;
+    padding-bottom: 0.4rem;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    color: whitesmoke;
+    background-color: rgb(245, 29, 29);
+    text-decoration: none;
+}
+#gb1:hover { 
+    background-color: rgb(250, 76, 76);
+}
+#gb1:active { 
+    background-color: rgb(249, 112, 112);
+}
+
+#borderforthese { 
+    overflow-y: auto;
+    height: 30rem;
+    width: 43rem;
+    background-color: whitesmoke;
+    margin-left: 1rem;
+    margin-bottom: 11rem;
+}
+#border { 
+    border-right: 2px solid black;
+    height: 38rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+}
+#border, #borderforthese, #tutorialforthese { 
+    display: inline-block;
+}
+#tutorialforthese { 
+    position: relative;
+    bottom: 6rem;
+    left: 2rem;
+}
+ 
+#morehtml {
+    height: 50rem;
+    overflow: auto;
 }
