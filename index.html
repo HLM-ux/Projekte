@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="index.css">
-<meta name="viewport" content="width=device-width, initial-scale=2.0">
+<meta name="viewport" content="width=device-width, intial-scale=2.0">
 <meta name="author" content="John Doe">
-<meta name="keyword" content="Javascript, Practice">
 <meta charset="UTF-8">
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
-<h1>Practice with deleting buttons</h1> <br>
 
-<button id="b1">Click here</button>
-<div id="instremover"></div>
-<div id="instforb1"></div>
-
-<div id="contentforb1"><h4><i>(This is what you'll permanently delete, everything.)</i></h4> 
-
-<h2 id="idforh2">Now this one is opposite</h2> <div id="testbutton"><h2 style="margin-top: 1px; margin-left: 6.5px;"><abbr title="position: absolute;, to make one element stand out like this by just staying in place and not being scrollable.">T</abbr></h2></div>
-<button id="b2">Click</button>
-<div id="contentforb2"></div>  <br>
-
-<div id="borderforall"></div>
-
-<p id="tutorial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus debitis aspernatur sequi beatae, animi explicabo tenetur, rem quisquam, quis eum accusantium ad. Vel iste nostrum est molestias libero nihil consequatur!
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat molestias deleniti, nisi eveniet quas quisquam ipsa, nostrum aut corporis dolores, cumque exercitationem repudiandae aliquam distinctio excepturi quidem recusandae rem enim?
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, vel, velit voluptates reprehenderit optio placeat impedit nulla tenetur praesentium eaque saepe ducimus aliquam nemo adipisci sapiente odio eveniet distinctio cupiditate.
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro nostrum, deserunt officiis, temporibus facere natus amet similique harum excepturi iure exercitationem quibusdam quod dolores. Saepe perspiciatis a nobis ea eius?
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde numquam quasi eius dignissimos quos aperiam quis cumque necessitatibus ipsa quia incidunt, labore suscipit est beatae animi, vel expedita similique accusamus.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptate quis illo debitis maiores laudantium magni! Eum, eveniet corrupti. Excepturi culpa doloremque quae necessitatibus modi consequuntur quaerat laborum a expedita!
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quo facere nostrum in maiores, voluptates illum aperiam, unde blanditiis quibusdam recusandae consequatur corrupti ab sint et! Excepturi eaque temporibus sit!
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis cupiditate officia rem aut ab molestiae labore, vitae in enim, vel tempore iure mollitia minus quia repellat nam voluptatum dolor deleniti!
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione illum incidunt labore eveniet non, officia, nisi, neque dignissimos minus dolorum doloremque? Repellendus ducimus officiis repellat cupiditate rem in provident esse!
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minus nesciunt commodi et minima nobis assumenda placeat necessitatibus ut illo aspernatur maiores labore explicabo quidem ullam, totam quaerat beatae ex?
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae repellat est non error quae assumenda quos quaerat ab provident doloremque! Aperiam sit beatae temporibus, explicabo ea delectus quae sapiente consectetur!
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, consequuntur culpa ex veritatis facere sunt eius? Tempore alias maxime saepe. Nobis quod ex deserunt ea alias! Tempore quaerat eveniet vero?
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum facere numquam quas molestiae ab atque veritatis magni suscipit officia incidunt doloremque neque sit officiis ut, eveniet nam, animi laborum repudiandae.
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe corrupti unde, nostrum vitae velit delectus quasi provident ipsum explicabo quae at voluptates placeat possimus, accusantium, vel ipsa ea cum quod?
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam incidunt dolore laborum alias soluta suscipit, distinctio sapiente a explicabo modi asperiores necessitatibus ipsam eligendi vero, earum quos adipisci voluptatem nam.
- </p>
+    
+<h2 id="fh">Press this button to see what happens:</h2>
+<button id="fb">Click</button> 
+    <div id="fd"></div> 
+<h3><br>How it works:</h3> <br>
+<h3><abbr title="Choose your button">document.getElementById('fb')</abbr>.addEventListener('click', function() {<br>
+    const container1 = document.getElementById('fd'); <span style="color: green">// Choose your div</span><br>
+    const paragraph1 = document.createElement('p'); <span style="color: green">// Select which element would you like to generate when clicking button</span><br>
+    paragraph1.textContent = 'Clicked'; <span style="color: green">// Select what would you like it to say</span><br>
+    container1.appendChild(paragraph1);<br>
+    }); </h3> <br> <br> <br> <br>
 
 
-</div>
+
+<h2 id="fh2">Press this button to see what happens:</h2> 
+<button id="fb2">Click</button>
+ <div id="fd2"></div> 
+ <h3><br>How it works:</h3> <br>
+ <h3>document.getElementById('fb2').addEventListener('click', function() <abbr title="Everything in except the first usual line should be nested inside this if element">{</abbr><br>
+    if (!document.getElementById('newElement')) { <span style="color: green">// Add this <span style="color: purple">if</span> element, select <span style="color: red">this id</span></span><br>
+        const container = document.getElementById('fd2');<br>
+        const newElement = document.createElement('p');<br>
+        newElement.textContent = 'Clicked';<br>
+        newElement.id = 'newElement'; <span style="color: green">// <span style="color: red">this id</span> Should be be selected</span><br>
+        container.appendChild(newElement);<br>
+    }<br>
+});</h3> <br> <br><br><br>
+
+<h2 id="fh3">Press this button to see what happens:</h2> 
+<button id="fb3">Click</button>
+ <div id="fd3"></div> 
+ <h3><br>How it works:</h3> <br>
+ <h3>document.getElementById('fb3').addEventListener('click', function() {<br> 
+    const Eelement = document.getElementById('gad')<br>
+    if (Eelement) {<br>
+        Eelement.remove()<br>
+    } else {<br>
+    const thetdiv = document.getElementById('td3')<br>
+    const generate = document.createElement('p')<br>
+    generate.id = 'gad'<br>
+    generate.textContent = 'now click again'<br>
+    thetdiv.appendChild(generate)<br>
+    }<br>
+})</h3>
+
+
 
 
 <script src="index.js"></script>

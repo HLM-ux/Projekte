@@ -1,40 +1,131 @@
-// { }
+// { } [ ]
 
-document.getElementById('b1').addEventListener('click', function() {
-    if (!document.getElementById('instructions')) { 
-    const deleter = document.getElementById('contentforb1')
-    deleter.remove()
-    const instructions = document.getElementById('instforb1')
-    const instructionsremover = document.getElementById('instremover')
-    const stepbystep = document.createElement('h3')
-    const stepremover = document.createElement('button')
-    stepremover.id = 'sbr3'
-    stepremover.textContent = 'Click here to remove the tutorial too'
-    stepbystep.id = 'instructions'
-    stepbystep.textContent = 'document.getElementById(<i>id of your selected button</i>).addEventListener(<i>declare which event use click as it is default</i>, function() {<br> const deleter = document.getElementById(<i>select the id of your choosen element</i>)<br> deleter.remove()'
-    instructionsremover.appendChild(stepremover)
-    instructions.appendChild(stepbystep) 
+    /*document.getElementById('fb').addEventListener('click', function() {
+    const container1 = document.getElementById('fd');
+    const paragraph1 = document.createElement('p');
+    paragraph1.textContent = 'Clicked';
+    container1.appendChild(paragraph1);
+    }); */
 
-document.getElementById('sbr3').addEventListener('click', function() { 
-    stepbystep.remove()
-    const buttonremover = document.getElementById('sbr3')
-    buttonremover.remove()
+
+
+    /*document.getElementById('fb2').addEventListener('click', function() {
+        if (!document.getElementById('ne')) {
+            const container = document.getElementById('fd2');
+            const newElement = document.createElement('p');
+            newElement.textContent = 'Clicked';
+            newElement.id = 'ne';
+            container.appendChild(newElement);
+        }
+    });
+
+
+
+
+    
+    /*  { }  */
+
+
+
+ /*document.getElementById('fb2').addEventListener('click', function() { 
+    if (!document.getElementById('hopefully')) { 
+    const thediv = document.getElementById('fd2');
+    const appender = document.createElement('p');
+    appender.textContent = 'finally';
+    appender.id = 'hopefully';
+    thediv.appendChild(appender);
+    }
+ });*/
+
+
+
+
+
+document.getElementById('fb').addEventListener('click', function() { 
+    const thediv1 = document.getElementById('fd')
+    const newii = document.createElement('p')
+    newii.textContent = 'JA!'
+    newii.style.color = 'blue'
+    thediv1.appendChild(newii)
+});
+
+
+document.getElementById('fb2').addEventListener('click', function() { 
+    if (!document.getElementById('oon')) { 
+    const spaceww = document.getElementById('fd2')
+    const newer = document.createElement('p')
+    newer.textContent = 'Just once'
+    newer.id = 'oon'
+    spaceww.appendChild(newer)
+    }
 })
-} })
 
-document.getElementById('b2').addEventListener('click', function() { 
-    if (!document.getElementById('appendedp')) { 
-    const thediv2 = document.getElementById('contentforb2')
-    const appended = document.createElement('p')
-    appended.id = 'appendedp'
-    appended.textContent = 'There, now the text is generated instead of deleted making this button the opposite.'
-    appended.style = 'font-size: 2rem; font-style: bold;'
-    thediv2.appendChild(appended)
-}
+
+
+/*document.getElementById('fb2').addEventListener('click', function() { 
+    const existingElement = document.getElementById('once'); 
+    if (existingElement) {
+        existingElement.remove(); // Remove the element if it exists
+    } else {
+        const newiii1 = document.createElement('p');
+        const newdiv = document.getElementById('fd2')
+        newiii1.id = 'once'; 
+        newiii1.textContent = 'good';
+        newdiv.appendChild(newiii1);
+    }
+});*/
+
+
+/*document.getElementById('fb3').addEventListener('click', function() { 
+    const Eelement = document.getElementById('gad')
+    if (Eelement) { 
+        Eelement.remove()
+    } else { 
+    const thetdiv = document.getElementById('fd3')
+    const generate = document.createElement('p')
+    generate.id = 'gad'
+    generate.textContent = 'now click again' 
+    thetdiv.appendChild(generate)
+    }
+})*/
+
+
+
+
+
+document.getElementById('fb3').addEventListener('click', function() { 
+    const thelement = document.getElementById('oon')
+    if (thelement) { 
+        thelement.remove()
+    } else { 
+    const space = document.getElementById('fd3')
+    const newe = document.createElement('p')
+    newe.id = 'oon'
+    newe.textContent = 'now click again'
+    space.appendChild(newe)
+    }
 })
 
-/* document.getElementById('b1').addEventListener('click', function() {
-    const deleter = document.getElementById('contentforb1')
-    deleter.remove()
-}) */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
