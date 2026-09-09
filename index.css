@@ -1,0 +1,30 @@
+#b1 { 
+    background-color: rgb(255, 224, 224);
+}
+#instremover, #b1 { 
+    display: inline-block;
+}
+#b2 { 
+    background-color: rgb(224, 255, 226);
+}
+#b1, #forb3 { 
+    display: inline-block;
+}
+
+#appendedp { 
+    position: absolute;
+}
+
+#borderforall { 
+    border-bottom: 1px orange dashed;
+    margin-top: 6rem;
+}
+
+#testbutton { 
+    width: 2rem;
+    height: 2rem;
+    background-color: red;
+    position: fixed;
+    cursor: pointer;
+    margin-left: 75rem;
+}
